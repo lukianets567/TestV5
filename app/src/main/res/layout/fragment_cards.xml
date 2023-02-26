@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".CardsFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/profileC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/settingsC"
+        style = "@style/defaultCardView"
+        >
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/profileT"
+            android:text="Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/defaultCardTextView"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/settingsC"
+        app:layout_constraintStart_toEndOf="@id/profileC"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/defaultCardView">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/settingsT"
+            android:text="Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/defaultCardTextView"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
