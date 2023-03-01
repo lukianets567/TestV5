@@ -10,7 +10,7 @@ class CustomCard(context: Context, attributeSet: AttributeSet) : LinearLayout(co
     private lateinit var binding: CustomCardBinding
 
     init {
-        binding = CustomCardBinding.inflate(LayoutInflater.from(context))
+        binding = CustomCardBinding.inflate(LayoutInflater.from(context), this, true)
 
         val attrs = context.obtainStyledAttributes(attributeSet, R.styleable.CustomCard)
 
