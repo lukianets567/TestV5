@@ -27,13 +27,21 @@ class CardsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        /*binding.profileC.setOnClickListener{
-            requireActivity().supportFragmentManager.beginTransaction().replace(_,Profile()).commit()
+        binding.profileC.setOnClickListener{
+            requireActivity().supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.container,Profile())
+                .addToBackStack(null)
+                .commit()
         }
         binding.settingsC.setOnClickListener{
-            requireActivity().supportFragmentManager.beginTransaction().replace(_,Settings()).commit()
+            requireActivity().supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.container,Settings())
+                .addToBackStack(null)
+                .commit()
 
-        }*/
+        }
 
     }
 }

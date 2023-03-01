@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         supportFragmentManager.beginTransaction()
-            .replace(binding.container.id, Profile())
+            .replace(binding.container.id, CardsFragment())
             .commit()
     }
     }

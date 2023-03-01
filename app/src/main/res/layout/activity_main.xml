@@ -15,5 +15,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
+    <com.example.testv5.CustomCard
+        android:id="@+id/custom1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text="First"
+        app:layout_constraintTop_toBottomOf="@id/container"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.example.testv5.CustomCard
+        android:id="@+id/custom2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:text="Second"
+        app:checked="true"
+        app:layout_constraintTop_toBottomOf="@id/custom1"
+        app:layout_constraintStart_toStartOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

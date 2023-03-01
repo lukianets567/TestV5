@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TestV5</string>
+    <string name="email">Електронна пошта</string>
+    <string name="required">Required</string>
+    <string name="login">Логін</string>
+    <string name="password">Пароль</string>
+    <string name="confirmPassword">Підтвердження пароля</string>
+    <string name="AboutMe">Про мене</string>
+</resources>

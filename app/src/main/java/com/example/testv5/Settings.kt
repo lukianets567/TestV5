@@ -18,12 +18,30 @@ class Settings : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentSettingsBinding.inflate(layoutInflater,container,false)
+        binding = FragmentSettingsBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        setDisabled()
+
+        binding.switch1.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) setEnabled()
+            else setDisabled()
+        }
     }
 
+    private fun setEnabled() {
+        binding.ii1.isEnabled = true
+        binding.ii2.isEnabled = true
+        binding.ii3.isEnabled = true
     }
+
+    private fun setDisabled() {
+        binding.ii1.isEnabled = false
+        binding.ii2.isEnabled = false
+        binding.ii3.isEnabled = false
+    }
+}
